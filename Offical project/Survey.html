@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Character</title>
+<style>
+        .center {
+    text-align: center;
+        }
+        body{
+                background-color: aqua
+        }
+</style>
+</head>
+<body>
+      
+        <div class="center">
+                        <h1>Choosing Your Character:</h1>
+                        <br>
+           
+   <form id="form1">
+                What color is your cat: <br>
+                <label for="color_string"><input type="radio" name="fur" value="25">Yes<br></label>
+                <label for="color_join"><input type="radio" name="fur" value="25">No<br></label>
+        
+        <br>
+        <br>
+        
+                What does your cat eat: <br>
+                <label for="eat_string"></label><input type="radio" name="Food" value="25">Yes<br></label>
+                <label for="eat_join"><input type="radio" name="Food" value="25">No<br></label>
+                <br>
+                <br>
+                How often does your cat purr: <br>
+                <label for="purr_string"><input type="radio" name="purr" value="25">Yes<br></label>
+                <label for="purr_join"><input type="radio" name="purr" value="25">No<br></label>
+                <br>
+                <br>
+               
+        
+                What is the color of your cat's eyes: <br>
+                <label for="eyes_string"><input type="radio" name="eyes" value="25">Yes<br></label>
+                <label for="eyes_string"><input type="radio" name="eyes" value="0">No<br></label>
+               
+                <br>
+        <br>        What color is your cat: <br>
+        <label for="color_string"><input type="radio" name="fur" value="25">Yes<br></label>
+        <label for="color_join"><input type="radio" name="fur" value="25">No<br></label>
+
+<br>
+<br>
+
+        What does your cat eat: <br>
+        <label for="eat_string"></label><input type="radio" name="Food" value="25">Yes<br></label>
+        <label for="eat_join"><input type="radio" name="Food" value="25">No<br></label>
+        <br>
+        <br>
+        How often does your cat purr: <br>
+        <label for="purr_string"><input type="radio" name="purr" value="25">Yes<br></label>
+        <label for="purr_join"><input type="radio" name="purr" value="25">No<br></label>
+        <br>
+        <br>
+       
+
+        What is the color of your cat's eyes: <br>
+        <label for="eyes_string"><input type="radio" name="eyes" value="25">Yes<br></label>
+        <label for="eyes_string"><input type="radio" name="eyes" value="0">No<br></label>
+       
+        <br>
+<br>        What color is your cat: <br>
+<label for="color_string"><input type="radio" name="fur" value="25">Yes<br></label>
+<label for="color_join"><input type="radio" name="fur" value="25">No<br></label>
+
+<br>
+<br>
+
+What does your cat eat: <br>
+<label for="eat_string"></label><input type="radio" name="Food" value="25">Yes<br></label>
+<label for="eat_join"><input type="radio" name="Food" value="25">No<br></label>
+<br>
+<br>
+How often does your cat purr: <br>
+<label for="purr_string"><input type="radio" name="purr" value="25">Yes<br></label>
+<label for="purr_join"><input type="radio" name="purr" value="25">No<br></label>
+<br>
+<br>
+
+
+What is the color of your cat's eyes: <br>
+<label for="eyes_string"><input type="radio" name="eyes" value="25">Yes<br></label>
+<label for="eyes_string"><input type="radio" name="eyes" value="0">No<br></label>
+
+<br>
+<br>
+<button type="submit" value="Submit your answers">Submit</button>
+</form>
+
+<p id="grade2"></p>
+</div>
+<script>
+document.getElementById("form1").onsubmit=function() {
+       fur = parseInt(document.querySelector('input[name = "fur"]:checked').value);
+	   Food = parseInt(document.querySelector('input[name = "Food"]:checked').value);
+	   purr = parseInt(document.querySelector('input[name = "purr"]:checked').value);
+	   eyes = parseInt(document.querySelector('input[name = "eyes"]:checked').value);
+	   
+	   
+	   result = fur + Food + purr + eyes;
+	   
+
+
+          if (result == 0) {result2 = "Character 1"};
+        if (result == 25) {result2 = "Character 2"};
+        if (result == 50) {result2 = "Chaaracter 3"};
+        if (result == 75) {result2 = "Character 4"};
+        if (result == 100) {result2 = "Character 5"};
+document.getElementById("grade2").innerHTML = result2; 
+return false; 
+} 
+
+
+</script>
+
+      
+      
+
+      
+    
+
+</body>
+</html>

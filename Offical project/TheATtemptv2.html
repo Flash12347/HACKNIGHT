@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<body>
+  
+  <style>
+    p{
+        color: white;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace
+        
+    }
+    body{
+        background-color: darkblue
+    }
+    button{
+        text-align: center;background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+    
+    </style>
+    <h1>Story/Scenario 1</h1>
+    <p>
+        Once upon a time there was a small city in which all the citizens were
+         obsorbed in the local weather forcast.The plain looking weatherman was
+         speaking into the camera with a concerned expression, announcing the
+        approaching storm.Though the storm was only a category one hurricane,
+        the entire town panicked! Every last small minded, easliy scared citizen
+        lost their mind....literally! Enter Terry, Mind Wrangler Extraordinaire! What do you do?
+        
+        
+        <br>
+        <br><input type="button" value="GO chase the minds and be a hero" readonly
+        onclick="document.getElementById('text1').style.visibility='visible';" >
+        <center><div id="text1" style="visibility:hidden;">
+
+        <input type="text" value="Wrong you would of died" readonly
+        onclick="document.getElementById('text1').style.visibility = 'visible';" >
+        </div></center>
+        <br>
+
+        <center><input type="button" value="Flee the place" readonly
+        onclick="document.getElementById('text2').style.visibility='visible';" ></center>
+        <br>
+        <center><div id="text2" style="visibility:hidden;" >
+
+        <input type="text" value="Correct" readonly
+        onclick="document.getElementById('text2').style.visibility = 'visible';">
+        </div></center>
+        <br>
+
+        <center><input type="button" value="Live a better life" readonly
+        onclick="document.getElementById('text3').style.visibility='visible';" ></center>
+        <br>
+        <center><div id="text3" style="visibility:hidden;">
+
+        <input type="text" value="Wrong " readonly
+        onclick="document.getElementById('text3').style.visibility = 'visible';" >
+        </div></center>
+        
+        </p>
+
+</body>
+
+
+</html>
