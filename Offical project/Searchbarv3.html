@@ -73,12 +73,12 @@ div.center{
 <div class="center"><p>Hello, how may we help you with your child</p>
 
 
-<input  type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in q symptom"><button id="search" onclick="mmFunction()">Search</button>
-<center><div id="list" hidden><ul id="myUL">
-  <li><a href="AgressiveAdvisors.html">Agressiveness</a></li>
+<input  type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name"><button id="search" onclick="mmFunction()">Search</button>
+<center><div id="list"><ul id="myUL">
+  <li><a href="buttonprofile.html">Agressiveness</a></li>
   <li><a href="#">Solitude</a></li>
 
-  <li><a href="AdivisorsIgnornat.html">Ignorant</a></li>
+  <li><a href="#">Ignorant</a></li>
   <li><a href="#">Leorum</a></li>
 
   <li><a href="#">Ipsim</a></li>
@@ -122,10 +122,10 @@ function myFunction() {
 }
 function mmFunction() {
     var x = document.getElementById("list");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    } else {
+    if (x.style.display === "none") {
         x.style.display = "block";
+    } else {
+        x.style.display = "none";
     }
 }</script>
 

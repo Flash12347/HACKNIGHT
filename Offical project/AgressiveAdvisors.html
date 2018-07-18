@@ -69,33 +69,23 @@ div.center{
   </style>
 </head>
 <body>
+ <button onclick="goBack()">Go Back</button>
 
-<div class="center"><p>Hello, how may we help you with your child</p>
-
-
-<input  type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in q symptom"><button id="search" onclick="mmFunction()">Search</button>
-<center><div id="list" hidden><ul id="myUL">
-  <li><a href="AgressiveAdvisors.html">Agressiveness</a></li>
-  <li><a href="#">Solitude</a></li>
-
-  <li><a href="AdivisorsIgnornat.html">Ignorant</a></li>
-  <li><a href="#">Leorum</a></li>
-
-  <li><a href="#">Ipsim</a></li>
-  </ul>
-  <br>
-<br>
-<br>
-</div></center>
-<a href="Tips.html"><button id="TT"><h3>Tips and Tutorials</h3>
+<script>
+function goBack() {
+    window.history.back();
+}
+</script> 
+<h1>Please choose what you'd like to view</h1>
+<a href="AgressiveTips.html"><button id="TT"><h3>Tips and Tutorials</h3>
   <p>Tips can help you and you<br>
     can see a video
   </p></button></a>
-  <a href="buttonprofile.html"><button id="Ad"><h3>Advisors</h3>
+  <a href="AgressiveAdviorsresult.html"><button id="Ad"><h3>Advisors</h3>
     <p>Tips can help you and you<br>
       can see a video
     </p></button></a>
-    <a href="TheATtemptv2.html"><button id="SC"><h3>Scenarios</h3>
+    <a href="AgressiveStory.html"><button id="SC"><h3>Scenarios</h3>
       <p>Tips can help you and you<br> 
         can see a video
       </p></button></a>
@@ -122,10 +112,10 @@ function myFunction() {
 }
 function mmFunction() {
     var x = document.getElementById("list");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    } else {
+    if (x.style.display === "none") {
         x.style.display = "block";
+    } else {
+        x.style.display = "none";
     }
 }</script>
 

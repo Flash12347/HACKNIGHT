@@ -4,11 +4,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {
-  box-sizing: border-box;
+  box-sizing:border-box;
 }
 
 #myInput {
-  background-image: url('/css/searchicon.png');
+  background-image: url('https://www.w3schools.com/css/searchicon.png');
   background-position: 10px 12px;
   background-repeat: no-repeat;
   width: 70%;
@@ -16,7 +16,7 @@
   padding: 10px 20px 12px 40px;
   border: 1px solid #ddd;
   margin-bottom: 12px;
-   border-radius: 20px
+  border-radius: 20px
 }
 
 #myUL {
@@ -33,14 +33,12 @@
   text-decoration: none;
   font-size: 18px;
   color: black;
-  display: block;
-  width: 50%;
-   border-radius: 5px
+  display: block
 }
 
 #myUL li a:hover:not(.header) {
-  background-color: #eee;}
-
+  background-color: #eee;
+}
 div.center{
           position: absolute;
       left: 0;
@@ -63,30 +61,22 @@ div.center{
       border-radius:20px;
     }
     body{
-      background-color: darkblue;
+      background-image: url('https://s3-alpha.figma.com/img/4987/144b/f9833ebb2c4be86b4f0d201117278568?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJK6APQGEHTP6I3PA%2F20180717%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20180717T213604Z&X-Amz-Expires=60&X-Amz-SignedHeaders=host&X-Amz-Signature=9551852280aba95ebcbce5ec0f87c5cdf5be03b96a701b0e2af58343fb96149a')
     }
-
-  </style>
+</style>
 </head>
 <body>
+
+ 
 
 <div class="center"><p>Hello, how may we help you with your child</p>
 
 
-<input  type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in q symptom"><button id="search" onclick="mmFunction()">Search</button>
-<center><div id="list" hidden><ul id="myUL">
-  <li><a href="AgressiveAdvisors.html">Agressiveness</a></li>
-  <li><a href="#">Solitude</a></li>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Type the problem wrong with your child" title="Type in a problem">
 
-  <li><a href="AdivisorsIgnornat.html">Ignorant</a></li>
-  <li><a href="#">Leorum</a></li>
-
-  <li><a href="#">Ipsim</a></li>
-  </ul>
-  <br>
 <br>
 <br>
-</div></center>
+<br>
 <a href="Tips.html"><button id="TT"><h3>Tips and Tutorials</h3>
   <p>Tips can help you and you<br>
     can see a video
@@ -102,32 +92,8 @@ div.center{
   
   
 
+</div>
 
-
-<script>
-function myFunction() {
-    var input, filter, ul, li, a, i;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("myUL");
-    li = ul.getElementsByTagName("li");
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
-        }
-    }
-}
-function mmFunction() {
-    var x = document.getElementById("list");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "block";
-    }
-}</script>
 
 </body>
 </html>
